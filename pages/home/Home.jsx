@@ -33,7 +33,7 @@ function Home() {
             />
             <p>
               Products you never knew you needed, at prices you never thought
-              possible. Only at <span className="brandname">SIMPLETRINKET</span>
+              possible. Only at <strong>SIMPLETRINKET</strong>
               .
             </p>
           </div>
@@ -49,7 +49,7 @@ function Home() {
           </h1>
           <div className="section-content column">
             <p>
-              <span className="brandname">SIMPLETRINKET</span>'s first line of
+              <strong>SIMPLETRINKET</strong>'s first line of
               buttons, hand-drawn and handmade-to-order by our own cofounder
               Brandon.
             </p>

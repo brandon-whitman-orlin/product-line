@@ -24,7 +24,7 @@ function Shop() {
           </h1>
           <div className="section-content column">
             <p>
-              <span className="brandname">SIMPLETRINKET</span>'s first line of
+              <strong>SIMPLETRINKET</strong>'s first line of
               buttons, hand-drawn and handmade-to-order by our own cofounder
               Brandon.
             </p>

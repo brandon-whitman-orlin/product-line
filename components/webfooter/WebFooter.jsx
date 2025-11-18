@@ -9,7 +9,7 @@ const WebFooter = ({ children }) => {
   return (
     <footer className="web-footer">
       <Beau />
-      <p>© {currentYear} SIMPLETRINKET</p>
+      <p>© {currentYear} <strong>SIMPLETRINKET</strong></p>
       {children}
     </footer>
   );
