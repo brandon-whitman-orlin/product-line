@@ -1,0 +1,39 @@
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product-link {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+}
+
+.product-images {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.product-image {
+  object-fit: cover;
+  position: relative;
+  aspect-ratio: 1;
+  transition: opacity 0.3s ease-in-out ;
+}
+
+.product-image.secondary-image {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+}
+
+.product-images:has(.product-image.secondary-image) .product-image.primary-image:hover {
+    opacity: 0;
+}
