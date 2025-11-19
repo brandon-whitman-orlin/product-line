@@ -11,9 +11,9 @@ import WebFooter from "../../components/webfooter/WebFooter";
 import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
 import Susquehana from "../../assets/characters/Susquehana_TRANSPARENT.svg";
 
-function Shop() {
+function Character_Buttons() {
   return (
-    <div className="shop page">
+<div className="shop page">
       <Navbar />
       <main className="main">
         <PageSection large>
@@ -64,9 +64,7 @@ function Shop() {
               />
             </ProductDisplay>
           </div>
-          <a href="/shop/character-buttons" className="cta-button">
-            Shop Buttons
-          </a>
+          <p>Want to bring the joy of <strong>SIMPLETRINKET</strong> to yourself or a loved one? Contact us at <strong>business@simpletrinket.com</strong>.</p>
         </PageSection>
       </main>
       <WebFooter>
@@ -78,4 +76,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default Character_Buttons;

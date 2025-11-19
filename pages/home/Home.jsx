@@ -89,7 +89,7 @@ function Home() {
               />
             </ProductDisplay>
           </div>
-          <a href="/shop" className="cta-button">
+          <a href="/shop/character-buttons" className="cta-button">
             Shop Buttons
           </a>
         </PageSection>
@@ -108,15 +108,15 @@ function Home() {
             </p>
           </div>
           <div className="button-display">
-            <a href="/shop" target="_blank" className="social-button">
+            <a href="/" target="_blank" className="social-button">
                 <InstagramIcon />
               Instagram
             </a>
-            <a href="/shop" target="_blank" className="social-button">
+            <a href="/" target="_blank" className="social-button">
                 <TikTokIcon />
               TikTok
             </a>
-            <a href="/shop" target="_blank" className="social-button">
+            <a href="/" target="_blank" className="social-button">
                 <YouTubeIcon />
               YouTube
             </a>
