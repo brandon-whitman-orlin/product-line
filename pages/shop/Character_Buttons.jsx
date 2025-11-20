@@ -11,6 +11,15 @@ import WebFooter from "../../components/webfooter/WebFooter";
 import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
 import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
+import b_l_b from "../../assets/productimages/characterbuttons/b_l_b.jpg";
+import b_l_p from "../../assets/productimages/characterbuttons/b_l_p.jpg";
+import c_l_b from "../../assets/productimages/characterbuttons/c_l_b.jpg";
+import c_l_p from "../../assets/productimages/characterbuttons/c_l_p.jpg";
+import s_l_b from "../../assets/productimages/characterbuttons/s_l_b.jpg";
+import s_l_p from "../../assets/productimages/characterbuttons/s_l_p.jpg";
+import h_l_b from "../../assets/productimages/characterbuttons/h_l_b.jpg";
+import h_l_p from "../../assets/productimages/characterbuttons/h_l_p.jpg";
+
 function Character_Buttons() {
   return (
     <div className="shop page">
@@ -29,37 +38,25 @@ function Character_Buttons() {
             </p>
             <ProductDisplay moving>
               <Product
-                product_images={[
-                  "../../assets/productimages/characterbuttons/b_l_b.jpg",
-                  "../../assets/productimages/characterbuttons/b_l_p.jpg",
-                ]}
+                product_images={[b_l_b, b_l_p]}
                 product_description="Beau"
                 product_link="/products/character-buttons/beau"
               />
 
               <Product
-                product_images={[
-                  "../../assets/productimages/characterbuttons/c_l_b.jpg",
-                  "../../assets/productimages/characterbuttons/c_l_p.jpg",
-                ]}
+                product_images={[c_l_b, c_l_p]}
                 product_description="Carlton"
                 product_link="/products/character-buttons/carlton"
               />
 
               <Product
-                product_images={[
-                  "../../assets/productimages/characterbuttons/h_l_b.jpg",
-                  "../../assets/productimages/characterbuttons/h_l_p.jpg",
-                ]}
+                product_images={[h_l_b, h_l_p]}
                 product_description="Hambert"
                 product_link="/products/character-buttons/hambert"
               />
 
               <Product
-                product_images={[
-                  "../../assets/productimages/characterbuttons/s_l_b.jpg",
-                  "../../assets/productimages/characterbuttons/s_l_p.jpg",
-                ]}
+                product_images={[s_l_b, s_l_p]}
                 product_description="Susquehanna"
                 product_link="/products/character-buttons/susquehanna"
               />
