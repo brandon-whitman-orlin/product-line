@@ -7,6 +7,13 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
+import b_s_b from "../../../assets/productimages/characterbuttons/b_s_b.jpg";
+import b_s_p from "../../../assets/productimages/characterbuttons/b_s_p.jpg";
+import b_m_b from "../../../assets/productimages/characterbuttons/b_m_b.jpg";
+import b_m_p from "../../../assets/productimages/characterbuttons/b_m_p.jpg";
+import b_l_b from "../../../assets/productimages/characterbuttons/b_l_b.jpg";
+import b_l_p from "../../../assets/productimages/characterbuttons/b_l_p.jpg";
+
 import Beau from "../../../assets/characters/Beau_TRANSPARENT.svg";
 
 function BeauButton() {
@@ -48,28 +55,19 @@ function BeauButton() {
           </div>
           <ProductDisplay moving>
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/b_s_b.jpg",
-                "../../assets/productimages/characterbuttons/b_s_p.jpg",
-              ]}
+              product_images={[b_s_b, b_s_p]}
               product_description='Beau 1" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/b_m_b.jpg",
-                "../../assets/productimages/characterbuttons/b_m_p.jpg",
-              ]}
+              product_images={[b_m_b, b_m_p]}
               product_description='Beau 1.25" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/b_l_b.jpg",
-                "../../assets/productimages/characterbuttons/b_l_p.jpg",
-              ]}
+              product_images={[b_l_b, b_l_p]}
               product_description='Beau 2.25" pin'
               product_link=""
             />

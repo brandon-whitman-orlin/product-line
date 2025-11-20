@@ -7,6 +7,13 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
+import c_s_b from "../../../assets/productimages/characterbuttons/c_s_b.jpg";
+import c_s_p from "../../../assets/productimages/characterbuttons/c_s_p.jpg";
+import c_m_b from "../../../assets/productimages/characterbuttons/c_m_b.jpg";
+import c_m_p from "../../../assets/productimages/characterbuttons/c_m_p.jpg";
+import c_l_b from "../../../assets/productimages/characterbuttons/c_l_b.jpg";
+import c_l_p from "../../../assets/productimages/characterbuttons/c_l_p.jpg";
+
 import Carlton from "../../../assets/characters/Carlton_TRANSPARENT.svg";
 
 function CarltonButton() {
@@ -47,28 +54,19 @@ function CarltonButton() {
           </div>
           <ProductDisplay moving>
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/c_s_b.jpg",
-                "../../assets/productimages/characterbuttons/c_s_p.jpg",
-              ]}
+              product_images={[c_s_b, c_s_p]}
               product_description='Carlton 1" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/c_m_b.jpg",
-                "../../assets/productimages/characterbuttons/c_m_p.jpg",
-              ]}
+              product_images={[c_m_b, c_m_p]}
               product_description='Carlton 1.25" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/c_l_b.jpg",
-                "../../assets/productimages/characterbuttons/c_l_p.jpg",
-              ]}
+              product_images={[c_l_b, c_l_p]}
               product_description='Carlton 2.25" pin'
               product_link=""
             />

@@ -7,6 +7,13 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
+import s_s_b from "../../../assets/productimages/characterbuttons/s_s_b.jpg";
+import s_s_p from "../../../assets/productimages/characterbuttons/s_s_p.jpg";
+import s_m_b from "../../../assets/productimages/characterbuttons/s_m_b.jpg";
+import s_m_p from "../../../assets/productimages/characterbuttons/s_m_p.jpg";
+import s_l_b from "../../../assets/productimages/characterbuttons/s_l_b.jpg";
+import s_l_p from "../../../assets/productimages/characterbuttons/s_l_p.jpg";
+
 import Susquehanna from "../../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
 function SusquehannaButton() {
@@ -48,34 +55,26 @@ function SusquehannaButton() {
           </div>
           <ProductDisplay moving>
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/s_s_b.jpg",
-                "../../assets/productimages/characterbuttons/s_s_p.jpg",
-              ]}
+              product_images={[s_s_b, s_s_p]}
               product_description='Susquehanna 1" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/s_m_b.jpg",
-                "../../assets/productimages/characterbuttons/s_m_p.jpg",
-              ]}
+              product_images={[s_m_b, s_m_p]}
               product_description='Susquehanna 1.25" pin'
               product_link=""
             />
 
             <Product
-              product_images={[
-                "../../assets/productimages/characterbuttons/s_l_b.jpg",
-                "../../assets/productimages/characterbuttons/s_l_p.jpg",
-              ]}
+              product_images={[s_l_b, s_l_p]}
               product_description='Susquehanna 2.25" pin'
               product_link=""
             />
           </ProductDisplay>
           <p className="product-cta">
-            She's got <strong>SIX ARMS</strong>, that's <strong>SIX GREAT REASONS</strong> to buy a{" "}
+            She's got <strong>SIX ARMS</strong>, that's{" "}
+            <strong>SIX GREAT REASONS</strong> to buy a{" "}
             <strong>SUSQUEHANNA BUTTON</strong>.
           </p>
         </PageSection>
