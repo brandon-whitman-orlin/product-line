@@ -129,6 +129,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
+  text-align: center;
 }
 
 p {

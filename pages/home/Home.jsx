@@ -9,7 +9,7 @@ import Product from "../../components/product/Product";
 import WebFooter from "../../components/webfooter/WebFooter";
 
 import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
-import Susquehana from "../../assets/characters/Susquehana_TRANSPARENT.svg";
+import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 import Carlton from "../../assets/characters/Carlton_TRANSPARENT.svg";
 
 import { ReactComponent as InstagramIcon } from "../../assets/icons/instagram.svg";
@@ -56,36 +56,38 @@ function Home() {
             <ProductDisplay moving>
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat1.jpg",
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat2.jpg",
+                  "../../assets/productimages/characterbuttons/b_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/b_l_p.jpg",
                 ]}
                 product_description="Beau"
-                product_link="/product/1"
+                product_link="/products/character-buttons/beau"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat3.jpg",
+                  "../../assets/productimages/characterbuttons/c_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/c_l_p.jpg",
                 ]}
                 product_description="Carlton"
-                product_link="/product/2"
+                product_link="/products/character-buttons/carlton"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat4.jpg",
+                  "../../assets/productimages/characterbuttons/h_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/h_l_p.jpg",
                 ]}
                 product_description="Hambert"
-                product_link="/product/3"
+                product_link="/products/character-buttons/hambert"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat5.jpg",
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat6.jpg",
+                  "../../assets/productimages/characterbuttons/s_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/s_l_p.jpg",
                 ]}
-                product_description="Susquehana"
-                product_link="/product/4"
+                product_description="Susquehanna"
+                product_link="/products/character-buttons/susquehanna"
               />
             </ProductDisplay>
           </div>
@@ -99,8 +101,8 @@ function Home() {
           </h1>
           <div className="section-content reverse">
             <img
-              src={Susquehana}
-              alt="Black and white image of a squid (Susquehana) waving at you."
+              src={Susquehanna}
+              alt="Black and white image of a squid (Susquehanna) waving at you."
             />
             <p>
               From new releases to behind the scenes, see the hard work we put

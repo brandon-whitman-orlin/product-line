@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100ch;
+  min-height: 82ch;
   width: 100vw;
 }
 
 .page-section h1 {
   font-size: var(--font-size-xxxl);
   word-break: break-word;
+  max-width: 1000px;
 }
 
 .page-section .section-content {
@@ -22,6 +23,7 @@
   max-width: 100%;
   margin-block: 1rem;
   position: relative;
+  align-self: stretch;
 }
 
 .page-section .section-content > img {

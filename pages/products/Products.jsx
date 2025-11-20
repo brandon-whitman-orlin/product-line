@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Page.css";
-import "./Contact.css";
+import "./Products.css";
 
 import Navbar from "../../components/navbar/Navbar";
 import PageSection from "../../components/pagesection/PageSection";
@@ -8,9 +8,9 @@ import WebFooter from "../../components/webfooter/WebFooter";
 
 import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
-function Contact() {
+function Products() {
   return (
-    <div className="contact page">
+    <div className="product page">
       <Navbar />
       <main className="main">
         <PageSection large>
@@ -37,4 +37,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Products;

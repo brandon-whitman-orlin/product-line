@@ -9,11 +9,11 @@ import Product from "../../components/product/Product";
 import WebFooter from "../../components/webfooter/WebFooter";
 
 import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
-import Susquehana from "../../assets/characters/Susquehana_TRANSPARENT.svg";
+import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
 function Character_Buttons() {
   return (
-<div className="shop page">
+    <div className="shop page">
       <Navbar />
       <main className="main">
         <PageSection large>
@@ -24,47 +24,52 @@ function Character_Buttons() {
           </h1>
           <div className="section-content column">
             <p>
-              <strong>SIMPLETRINKET</strong>'s first line of
-              buttons, hand-drawn and handmade-to-order by our own cofounder
-              Brandon.
+              <strong>SIMPLETRINKET</strong>'s first line of buttons, hand-drawn
+              and handmade-to-order by our own cofounder Brandon.
             </p>
             <ProductDisplay moving>
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat1.jpg",
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat2.jpg",
+                  "../../assets/productimages/characterbuttons/b_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/b_l_p.jpg",
                 ]}
                 product_description="Beau"
-                product_link="/product/1"
+                product_link="/products/character-buttons/beau"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat3.jpg",
+                  "../../assets/productimages/characterbuttons/c_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/c_l_p.jpg",
                 ]}
                 product_description="Carlton"
-                product_link="/product/2"
+                product_link="/products/character-buttons/carlton"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat4.jpg",
+                  "../../assets/productimages/characterbuttons/h_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/h_l_p.jpg",
                 ]}
                 product_description="Hambert"
-                product_link="/product/3"
+                product_link="/products/character-buttons/hambert"
               />
 
               <Product
                 product_images={[
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat5.jpg",
-                  "https://cdn.jsdelivr.net/gh/brandon-whitman-orlin/cats/images/cat6.jpg",
+                  "../../assets/productimages/characterbuttons/s_l_b.jpg",
+                  "../../assets/productimages/characterbuttons/s_l_p.jpg",
                 ]}
-                product_description="Susquehana"
-                product_link="/product/4"
+                product_description="Susquehanna"
+                product_link="/products/character-buttons/susquehanna"
               />
             </ProductDisplay>
           </div>
-          <p>Want to bring the joy of <strong>SIMPLETRINKET</strong> to yourself or a loved one? Contact us at <strong>business@simpletrinket.com</strong>.</p>
+          <p>
+            Want to bring the joy of <strong>SIMPLETRINKET</strong> to yourself
+            or a loved one? Contact us at{" "}
+            <strong>business@simpletrinket.com</strong>.
+          </p>
         </PageSection>
       </main>
       <WebFooter>
