@@ -9,7 +9,7 @@ import Product from "../../../components/product/Product";
 
 import products from "../../../src/data/products.json";
 import { useCart } from "../../../src/context/CartContext";
-import { getProductBySku } from "../data/products";
+import { getProductBySku } from "../../../src/data/products";
 
 import Beau from "../../../assets/characters/Beau_TRANSPARENT.svg";
 import BeauPin from "../../../assets/productimages/characterbuttons/Beau_Pin.png";
