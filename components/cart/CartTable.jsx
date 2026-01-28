@@ -59,7 +59,10 @@ export default function CartTable() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          items: detailedItems.map((i) => ({ sku: i.sku, quantity: i.quantity })),
+          items: detailedItems.map((i) => ({
+            sku: i.sku,
+            quantity: i.quantity,
+          })),
           successPath: "/success",
           cancelPath: "/cart",
         }),
@@ -94,8 +97,10 @@ export default function CartTable() {
             <tr key={item.sku}>
               <td className="prod-image">
                 <img src={productImages[item.image]} alt={item.name} />
-                </td>
-              <td className="prod-name strong">{item.name}</td>
+              </td>
+              <td className="prod-name strong">
+                <p>{item.props.name}</p>
+              </td>
               <td className="prod-price">${toMoney(item.price)}</td>
               <td className="prod-quantity">
                 <input
@@ -132,7 +137,11 @@ export default function CartTable() {
         {checkoutError ? <p className="cart-error">{checkoutError}</p> : null}
 
         <div className="cart-buttons">
-          <button type="button" onClick={clearCart} disabled={!detailedItems.length || isCheckingOut}>
+          <button
+            type="button"
+            onClick={clearCart}
+            disabled={!detailedItems.length || isCheckingOut}
+          >
             Clear cart
           </button>
 
