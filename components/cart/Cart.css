@@ -22,7 +22,7 @@
   font-weight: 600;
 }
 
-.add-to-cart-section button, button.add-to-cart-section {
+.add-to-cart-section button, button.add-to-cart {
   width: fit-content;
   font-weight: bold;
   font-family: var(--heading-font);
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.add-to-cart-section button:hover, button.add-to-cart-section button:hover {
+.add-to-cart-section button:hover, button.add-to-cart button:hover {
   background-color: var(--color-heading);
   color: var(--color-tab);
 }

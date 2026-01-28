@@ -149,7 +149,7 @@ export default function CartTable() {
 
           <button
             type="button"
-            className="checkout-btn"
+            className="add-to-cart checkout-btn"
             onClick={handleCheckout}
             disabled={!detailedItems.length || isCheckingOut}
           >
