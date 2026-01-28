@@ -71,6 +71,7 @@
 
 .prod-price {
   text-align: center;
+  padding-right: 1rem;
 }
 
 .prod-qty {
@@ -164,6 +165,7 @@ thead,
     font-size: var(--font-size-sm);
     padding-left: 0;
     text-align: center;
+    max-width: 10ch;
   }
 
   .prod-price {
