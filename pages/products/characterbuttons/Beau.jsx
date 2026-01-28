@@ -9,12 +9,16 @@ import Product from "../../../components/product/Product";
 
 import products from "../../../src/data/products.json";
 import { useCart } from "../../../src/context/CartContext";
+import { getProductBySku } from "../data/products";
 
 import Beau from "../../../assets/characters/Beau_TRANSPARENT.svg";
 import BeauPin from "../../../assets/productimages/characterbuttons/Beau_Pin.png";
 
 function BeauButton() {
   const { addItem } = useCart();
+  const oneinch = getProductBySku("beau_pin_1");
+  // const onetwofiveinch = getProductBySku("beau_pin_2");
+  // const twotwofiveinch = getProductBySku("beau_pin_3");
 
   return (
     <div className="product page">
@@ -77,13 +81,11 @@ function BeauButton() {
           </p>
 
           {/*  */}
-          {products.map((p) => (
-            <div key={p.sku}>
-              <h3>{p.name}</h3>
-              <p>${Number(p.price).toFixed(2)}</p>
-              <button onClick={() => addItem(p.sku, 1)}>Add to cart</button>
-            </div>
-          ))}
+          <div>
+            <h3>{oneinch.name}</h3>
+            <p>${Number(oneinch.price).toFixed(2)}</p>
+            <button onClick={() => addItem(oneinch.sku, 1)}>Add to cart</button>
+          </div>
           {/*  */}
         </PageSection>
       </main>
