@@ -5,5 +5,40 @@
     "price": 2.0,
     "stripePriceId": "price_1SuStNI4aJ7tkLNaCwAeNXCs",
     "image": "beau_pin"
+  },
+    {
+    "sku": "beau_pin_2",
+    "name": "Beau 1.25\" Pin",
+    "price": 3.0,
+    "stripePriceId": "price_1SuTcyI4aJ7tkLNaLua5OY6E",
+    "image": "beau_pin"
+  },
+    {
+    "sku": "beau_pin_3",
+    "name": "Beau 2.25\" Pin",
+    "price": 5.0,
+    "stripePriceId": "price_1SuTd1I4aJ7tkLNaTeRHaqg4",
+    "image": "beau_pin"
+  },
+    {
+    "sku": "carlton_pin_1",
+    "name": "Carlton 1\" Pin",
+    "price": 2.0,
+    "stripePriceId": "price_1SuTrXI4aJ7tkLNa0gPRct3c",
+    "image": "carlton_pin"
+  },
+    {
+    "sku": "carlton_pin_2",
+    "name": "Carlton 1.25\" Pin",
+    "price": 3.0,
+    "stripePriceId": "price_1SuTrbI4aJ7tkLNatPY8xSsC",
+    "image": "carlton_pin"
+  },
+    {
+    "sku": "carlton_pin_3",
+    "name": "Carlton 2.25\" Pin",
+    "price": 5.0,
+    "stripePriceId": "price_1SuTrdI4aJ7tkLNaKG54jMP9",
+    "image": "carlton_pin"
   }
 ]

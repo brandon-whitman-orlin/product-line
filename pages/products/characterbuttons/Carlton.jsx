@@ -7,9 +7,19 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
+import products from "../../../src/data/products.json";
+import { useCart } from "../../../src/context/CartContext";
+import { getProductBySku } from "../../../src/data/products";
+
 import Carlton from "../../../assets/characters/Carlton_TRANSPARENT.svg";
+import CarltonPin from "../../../assets/productimages/characterbuttons/Carlton_Pin.png";
 
 function CarltonButton() {
+  const { addItem } = useCart();
+  const oneinch = getProductBySku("carlton_pin_1");
+  const onetwofiveinch = getProductBySku("carlton_pin_2");
+  const twotwofiveinch = getProductBySku("carlton_pin_3");
+
   return (
     <div className="product page">
       <Navbar />
@@ -46,23 +56,41 @@ function CarltonButton() {
             </ul>
           </div>
           <ProductDisplay moving>
-            <Product
-              product_images={[c_s_b, c_s_p]}
-              product_description='Carlton 1" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product product_images={[CarltonPin]} product_link="" />
 
-            <Product
-              product_images={[c_m_b, c_m_p]}
-              product_description='Carlton 1.25" pin'
-              product_link=""
-            />
+              <div className="add-to-cart-section">
+                <h3>{oneinch.name}</h3>
+                <p>${Number(oneinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(oneinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
 
-            <Product
-              product_images={[c_l_b, c_l_p]}
-              product_description='Carlton 2.25" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product product_images={[CarltonPin]} product_link="" />
+
+              <div className="add-to-cart-section">
+                <h3>{onetwofiveinch.name}</h3>
+                <p>${Number(onetwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(onetwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <div className="product-wrapper">
+              <Product product_images={[CarltonPin]} product_link="" />
+
+              <div className="add-to-cart-section">
+                <h3>{twotwofiveinch.name}</h3>
+                <p>${Number(twotwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(twotwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
           </ProductDisplay>
           <p className="product-cta">
             If you want <strong>STRONG BONES</strong>, and{" "}

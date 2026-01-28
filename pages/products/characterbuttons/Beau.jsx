@@ -17,8 +17,8 @@ import BeauPin from "../../../assets/productimages/characterbuttons/Beau_Pin.png
 function BeauButton() {
   const { addItem } = useCart();
   const oneinch = getProductBySku("beau_pin_1");
-  // const onetwofiveinch = getProductBySku("beau_pin_2");
-  // const twotwofiveinch = getProductBySku("beau_pin_3");
+  const onetwofiveinch = getProductBySku("beau_pin_2");
+  const twotwofiveinch = getProductBySku("beau_pin_3");
 
   return (
     <div className="product page">
@@ -57,23 +57,50 @@ function BeauButton() {
             </ul>
           </div>
           <ProductDisplay moving>
-            <Product
-              product_images={[BeauPin]}
-              product_description='Beau 1" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product
+                product_images={[BeauPin]}
+                product_link=""
+              />
 
-            <Product
-              product_images={[BeauPin]}
-              product_description='Beau 1.25" pin'
-              product_link=""
-            />
+              <div className="add-to-cart-section">
+                <h3>{oneinch.name}</h3>
+                <p>${Number(oneinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(oneinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
 
-            <Product
-              product_images={[BeauPin]}
-              product_description='Beau 2.25" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product
+                product_images={[BeauPin]}
+                product_link=""
+              />
+
+              <div className="add-to-cart-section">
+                <h3>{onetwofiveinch.name}</h3>
+                <p>${Number(onetwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(onetwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <div className="product-wrapper">
+              <Product
+                product_images={[BeauPin]}
+                product_link=""
+              />
+
+              <div className="add-to-cart-section">
+                <h3>{twotwofiveinch.name}</h3>
+                <p>${Number(twotwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(twotwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
           </ProductDisplay>
           <p className="product-cta">
             Add a little <strong>YEEHAW</strong> to your life, with a{" "}
@@ -81,11 +108,7 @@ function BeauButton() {
           </p>
 
           {/*  */}
-          <div>
-            <h3>{oneinch.name}</h3>
-            <p>${Number(oneinch.price).toFixed(2)}</p>
-            <button onClick={() => addItem(oneinch.sku, 1)}>Add to cart</button>
-          </div>
+
           {/*  */}
         </PageSection>
       </main>
