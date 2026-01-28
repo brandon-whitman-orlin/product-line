@@ -32,6 +32,10 @@
   overflow: hidden;
 }
 
+.product-images .product-image {
+  padding-left: 0 !important;
+}
+
 .product-image.secondary-image {
     z-index: -1;
     position: absolute;
