@@ -44,10 +44,10 @@
   text-align: center;
 }
 
-.prod-quantity {
+.prod-qty {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
   gap: calc(var(--font-size-sm) / 2);
 }
 
