@@ -66,7 +66,7 @@ function BeauButton() {
             />
 
             <Product
-              product_images={beauPin}
+              product_images={BeauPin}
               product_description='Beau 2.25" pin'
               product_link=""
             />
