@@ -11,6 +11,7 @@ import products from "../../../src/data/products.json";
 import { useCart } from "../../../src/context/CartContext";
 
 import Beau from "../../../assets/characters/Beau_TRANSPARENT.svg";
+import BeauPin from "../../../assets/productimages/characterbuttons/Beau_Pin.png";
 
 function BeauButton() {
   const { addItem } = useCart();
@@ -53,21 +54,18 @@ function BeauButton() {
           </div>
           <ProductDisplay moving>
             <Product
-              product_images={""}
+              product_images={BeauPin}
               product_description='Beau 1" pin'
-              product_link=""
             />
 
             <Product
-              product_images={""}
+              product_images={BeauPin}
               product_description='Beau 1.25" pin'
-              product_link=""
             />
 
             <Product
-              product_images={""}
+              product_images={BeauPin}
               product_description='Beau 2.25" pin'
-              product_link=""
             />
           </ProductDisplay>
           <p className="product-cta">
