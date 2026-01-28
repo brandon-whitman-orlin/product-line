@@ -48,7 +48,6 @@
   display: flex;
   border-radius: var(--border-radius);
   overflow: hidden;
-  gap: calc(var(--font-size-sm) / 2);
 }
 
 .prod-remove {
