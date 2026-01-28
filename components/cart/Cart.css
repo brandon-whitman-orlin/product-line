@@ -1,5 +1,11 @@
-.cart-table {
+.cart-wrap {
   width: 80%;
+  display: grid;
+  place-items: center;
+}
+
+.cart-table {
+  width: 100%;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -7,6 +13,12 @@
 .product-image {
   text-align: left;
   padding-left: calc(var(--font-size-sm) / 2);
+}
+
+.prod-image img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  max-width: 150px;
 }
 
 .product-quantity {
