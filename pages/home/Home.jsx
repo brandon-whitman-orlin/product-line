@@ -12,6 +12,12 @@ import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
 import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 import Carlton from "../../assets/characters/Carlton_TRANSPARENT.svg";
 
+import BeauPin from "../../assets/productimages/characterbuttons/Beau_Pin.png";
+import CarltonPin from "../../assets/productimages/characterbuttons/Carlton_Pin.png";
+import HambertPin from "../../assets/productimages/characterbuttons/Hambert_Pin.png";
+import SusquehannaPin from "../../assets/productimages/characterbuttons/Susquehanna_Pin.png";
+
+
 import { ReactComponent as InstagramIcon } from "../../assets/icons/instagram.svg";
 import { ReactComponent as TikTokIcon } from "../../assets/icons/tiktok.svg";
 import { ReactComponent as YouTubeIcon } from "../../assets/icons/youtube.svg";
@@ -52,25 +58,25 @@ function Home() {
             </p>
             <ProductDisplay moving>
               <Product
-                product_images={""}
+                product_images={[BeauPin]}
                 product_description="Beau"
                 product_link="/products/character-buttons/beau"
               />
 
               <Product
-                product_images={""}
+                product_images={[CarltonPin]}
                 product_description="Carlton"
                 product_link="/products/character-buttons/carlton"
               />
 
               <Product
-                product_images={""}
+                product_images={[HambertPin]}
                 product_description="Hambert"
                 product_link="/products/character-buttons/hambert"
               />
 
               <Product
-                product_images={""}
+                product_images={[SusquehannaPin]}
                 product_description="Susquehanna"
                 product_link="/products/character-buttons/susquehanna"
               />

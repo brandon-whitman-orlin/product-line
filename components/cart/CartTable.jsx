@@ -139,7 +139,7 @@ export default function CartTable() {
         {checkoutError ? <p className="cart-error">{checkoutError}</p> : null}
 
         <div className="cart-buttons">
-          <button
+          <button className="add-to-cart"
             type="button"
             onClick={clearCart}
             disabled={!detailedItems.length || isCheckingOut}

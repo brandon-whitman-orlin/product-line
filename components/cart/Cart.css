@@ -22,7 +22,7 @@
   font-weight: 600;
 }
 
-.add-to-cart-section button {
+.add-to-cart-section button, button.add-to-cart-section {
   width: fit-content;
   font-weight: bold;
   font-family: var(--heading-font);
@@ -30,11 +30,11 @@
   background-color: var(--color-tab);
   border: 1px solid var(--color-heading);
   border-radius: var(--border-radius);
-  padding: calc(var(--font-size-sm)/2);
+  padding: calc(var(--font-size-sm) / 2);
   cursor: pointer;
 }
 
-.add-to-cart-section button:hover {
+.add-to-cart-section button:hover, button.add-to-cart-section button:hover {
   background-color: var(--color-heading);
   color: var(--color-tab);
 }
@@ -77,6 +77,7 @@
   display: flex;
   border-radius: var(--border-radius);
   overflow: hidden;
+  width: 7ch;
 }
 
 .prod-remove {
@@ -115,4 +116,56 @@ thead,
 
 .strong {
   font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .cart-table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-table tbody .product-price,
+  .prod-price {
+    padding-inline: var(--font-size-sm);
+  }
+
+  .cart-table tbody .prod-image img {
+    max-width: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cart-table tbody .prod-image img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cart-wrap {
+    width: 95%;
+  }
+
+  .tabletop th {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: var(--font-size-base);
+}
+
+  .prod-name-text {
+    font-size: var(--font-size-sm);
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .prod-price {
+    padding-inline: 0;
+    padding-left: 0;
+    text-align: center;
+  }
 }

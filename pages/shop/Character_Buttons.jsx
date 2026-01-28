@@ -8,8 +8,10 @@ import ProductDisplay from "../../components/productdisplay/ProductDisplay";
 import Product from "../../components/product/Product";
 import WebFooter from "../../components/webfooter/WebFooter";
 
-import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
-import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
+import BeauPin from "../../assets/productimages/characterbuttons/Beau_Pin.png";
+import CarltonPin from "../../assets/productimages/characterbuttons/Carlton_Pin.png";
+import HambertPin from "../../assets/productimages/characterbuttons/Hambert_Pin.png";
+import SusquehannaPin from "../../assets/productimages/characterbuttons/Susquehanna_Pin.png";
 
 function Character_Buttons() {
   return (
@@ -29,25 +31,25 @@ function Character_Buttons() {
             </p>
             <ProductDisplay moving>
               <Product
-                product_images={[b_l_b, b_l_p]}
+                product_images={[BeauPin]}
                 product_description="Beau"
                 product_link="/products/character-buttons/beau"
               />
 
               <Product
-                product_images={[c_l_b, c_l_p]}
+                product_images={[CarltonPin]}
                 product_description="Carlton"
                 product_link="/products/character-buttons/carlton"
               />
 
               <Product
-                product_images={[h_l_b, h_l_p]}
+                product_images={[HambertPin]}
                 product_description="Hambert"
                 product_link="/products/character-buttons/hambert"
               />
 
               <Product
-                product_images={[s_l_b, s_l_p]}
+                product_images={[SusquehannaPin]}
                 product_description="Susquehanna"
                 product_link="/products/character-buttons/susquehanna"
               />
