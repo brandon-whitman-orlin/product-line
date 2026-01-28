@@ -99,7 +99,8 @@ export default function Cart({ children }) {
             <tr key={`${item.props.sku || item.props.name}-${index}`}>
               <td className="prod-image">
                 <img
-                  src={"Yes"}
+                  src={productImages[item.props.image]?.image}
+                  alt={item.props.name}
                 />
               </td>
               <td className="prod-name strong">{item.props.name}</td>
