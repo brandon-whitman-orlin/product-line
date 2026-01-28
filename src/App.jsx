@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "../pages/home/Home";
 import Shop from "../pages/shop/Shop";
+import MyCart from "../pages/mycart/MyCart"
 import Character_Buttons from "../pages/shop/Character_Buttons";
 import BeauButton from "../pages/products/characterbuttons/Beau";
 import CarltonButton from "../pages/products/characterbuttons/Carlton";
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/products/character-buttons/susquehanna" element={<SusquehannaButton />} />
         <Route path="/products/character-buttons/carlton" element={<CarltonButton />} />
         {/* <Route path="/shop/collections" element={<Collections />} /> */}
+        <Route path="/cart" element={<MyCart />}/>
         
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

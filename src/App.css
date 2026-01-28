@@ -33,6 +33,7 @@
     /* Backgrounds */
     --color-background: #fff7f1; /* Warm Cream */
     --color-surface: #ffffff; /* Pure White for cards */
+    --color-tab: #e2e2e2; /* Darker Color for tabs */
 
     /* Accents */
     --color-primary: #ff6f61; /* Soft Coral */
@@ -51,6 +52,7 @@
   :root {
     --color-background: #fff7f1;
     --color-surface: #ffffff;
+    --color-tab: #e2e2e2;
     --color-primary: #ff6f61;
     --color-secondary: #7baaf7;
     --color-text: #2e2e2e;

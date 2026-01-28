@@ -14,9 +14,14 @@ import b_m_p from "../../../assets/productimages/characterbuttons/b_m_p.jpg";
 import b_l_b from "../../../assets/productimages/characterbuttons/b_l_b.jpg";
 import b_l_p from "../../../assets/productimages/characterbuttons/b_l_p.jpg";
 
+import products from "../../../src/data/products.json";
+import { useCart } from "../../../src/context/CartContext";
+
 import Beau from "../../../assets/characters/Beau_TRANSPARENT.svg";
 
 function BeauButton() {
+  const { addItem } = useCart();
+
   return (
     <div className="product page">
       <Navbar />
@@ -76,6 +81,16 @@ function BeauButton() {
             Add a little <strong>YEEHAW</strong> to your life, with a{" "}
             <strong>BEAU BUTTON</strong>.
           </p>
+
+          {/*  */}
+          {products.map((p) => (
+            <div key={p.sku}>
+              <h3>{p.name}</h3>
+              <p>${Number(p.price).toFixed(2)}</p>
+              <button onClick={() => addItem(p.sku, 1)}>Add to cart</button>
+            </div>
+          ))}
+          {/*  */}
         </PageSection>
       </main>
       <WebFooter>

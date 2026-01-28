@@ -54,6 +54,12 @@ const Navbar = ({ children }) => {
             About
           </a>
         </li>
+
+                <li>
+          <a href="/cart" aria-label="View your Cart">
+            Cart
+          </a>
+        </li>
       </ul>
     </div>
   );
