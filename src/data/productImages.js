@@ -4,6 +4,4 @@ const productImages = {
   beau_pin: BeauPin,
 };
 
-console.log(beau_pin);
-
 export default productImages;
