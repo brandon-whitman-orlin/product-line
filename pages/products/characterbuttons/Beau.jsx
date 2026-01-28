@@ -56,16 +56,19 @@ function BeauButton() {
             <Product
               product_images={BeauPin}
               product_description='Beau 1" pin'
+              product_link=""
             />
 
             <Product
               product_images={BeauPin}
               product_description='Beau 1.25" pin'
+              product_link=""
             />
 
             <Product
-              product_images={BeauPin}
+              product_images={beauPin}
               product_description='Beau 2.25" pin'
+              product_link=""
             />
           </ProductDisplay>
           <p className="product-cta">
