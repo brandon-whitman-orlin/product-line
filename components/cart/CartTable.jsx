@@ -83,7 +83,7 @@ export default function CartTable() {
         <thead>
           <tr className="tabletop">
             <th className="product-image">Product</th>
-            <th className="product-name">Item</th>
+            <th className="product-name"></th>
             <th className="product-price">Price</th>
             <th className="product-quantity">Quantity</th>
           </tr>
