@@ -20,6 +20,7 @@
     "stripePriceId": "price_1SuTd1I4aJ7tkLNaTeRHaqg4",
     "image": "beau_pin"
   },
+
     {
     "sku": "carlton_pin_1",
     "name": "Carlton 1\" Pin",
@@ -40,5 +41,49 @@
     "price": 5.0,
     "stripePriceId": "price_1SuTrdI4aJ7tkLNaKG54jMP9",
     "image": "carlton_pin"
+  },
+
+      {
+    "sku": "hambert_pin_1",
+    "name": "Hambert 1\" Pin",
+    "price": 2.0,
+    "stripePriceId": "price_1SuTyFI4aJ7tkLNasQGkKG6R",
+    "image": "hambert_pin"
+  },
+    {
+    "sku": "hambert_pin_2",
+    "name": "Hambert 1.25\" Pin",
+    "price": 3.0,
+    "stripePriceId": "price_1SuTyII4aJ7tkLNapwPLxMGc",
+    "image": "hambert_pin"
+  },
+    {
+    "sku": "hambert_pin_3",
+    "name": "Hambert 2.25\" Pin",
+    "price": 5.0,
+    "stripePriceId": "price_1SuTyKI4aJ7tkLNaDiq1EEbH",
+    "image": "hambert_pin"
+  },
+
+  {
+    "sku": "susquehanna_pin_1",
+    "name": "Susquehanna 1\" Pin",
+    "price": 2.0,
+    "stripePriceId": "price_1SuU1rI4aJ7tkLNa3ZFabSLH",
+    "image": "susquehanna_pin"
+  },
+    {
+    "sku": "susquehanna_pin_2",
+    "name": "Susquehanna 1.25\" Pin",
+    "price": 3.0,
+    "stripePriceId": "price_1SuU1tI4aJ7tkLNaUROYUDuK",
+    "image": "susquehanna_pin"
+  },
+    {
+    "sku": "susquehanna_pin_3",
+    "name": "Susquehanna 2.25\" Pin",
+    "price": 5.0,
+    "stripePriceId": "price_1SuU1uI4aJ7tkLNatYAt3hDS",
+    "image": "susquehanna_pin"
   }
 ]

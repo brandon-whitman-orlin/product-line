@@ -7,9 +7,19 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
+import products from "../../../src/data/products.json";
+import { useCart } from "../../../src/context/CartContext";
+import { getProductBySku } from "../../../src/data/products";
+
 import Hambert from "../../../assets/characters/Hambert_TRANSPARENT.svg";
+import HambertPin from "../../../assets/productimages/characterbuttons/Hambert_Pin.png";
 
 function HambertButton() {
+  const { addItem } = useCart();
+  const oneinch = getProductBySku("hambert_pin_1");
+  const onetwofiveinch = getProductBySku("hambert_pin_2");
+  const twotwofiveinch = getProductBySku("hambert_pin_3");
+
   return (
     <div className="product page">
       <Navbar />
@@ -47,23 +57,41 @@ function HambertButton() {
             </ul>
           </div>
           <ProductDisplay moving>
-            <Product
-              product_images={[h_s_b, h_s_p]}
-              product_description='Hambert 1" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product product_images={[HambertPin]} product_link="" />
 
-            <Product
-              product_images={[h_m_b, h_m_p]}
-              product_description='Hambert 1.25" pin'
-              product_link=""
-            />
+              <div className="add-to-cart-section">
+                <h3>{oneinch.name}</h3>
+                <p>${Number(oneinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(oneinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
 
-            <Product
-              product_images={[h_l_b, h_l_p]}
-              product_description='Hambert 2.25" pin'
-              product_link=""
-            />
+            <div className="product-wrapper">
+              <Product product_images={[HambertPin]} product_link="" />
+
+              <div className="add-to-cart-section">
+                <h3>{onetwofiveinch.name}</h3>
+                <p>${Number(onetwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(onetwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <div className="product-wrapper">
+              <Product product_images={[HambertPin]} product_link="" />
+
+              <div className="add-to-cart-section">
+                <h3>{twotwofiveinch.name}</h3>
+                <p>${Number(twotwofiveinch.price).toFixed(2)}</p>
+                <button onClick={() => addItem(twotwofiveinch.sku, 1)}>
+                  Add to cart
+                </button>
+              </div>
+            </div>
           </ProductDisplay>
           <p className="product-cta">
             If you've been <strong>INJURED AT WORK</strong>, or just need a
