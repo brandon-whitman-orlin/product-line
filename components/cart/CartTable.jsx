@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from "react";
 import "./Cart.css";
 
+import productImages from "../../src/data/productImages";
+
 import { ReactComponent as Trash } from "../../assets/icons/trash.svg";
 import products from "../../src/data/products.json";
 import { useCart } from "../../src/context/CartContext";
@@ -90,7 +92,7 @@ export default function CartTable() {
         <tbody>
           {detailedItems.map((item) => (
             <tr key={item.sku}>
-              <td className="prod-image">{item.image}</td>
+              <td className="prod-image">{productImages[item.image]}</td>
               <td className="prod-name strong">{item.name}</td>
               <td className="prod-price">${toMoney(item.price)}</td>
               <td className="prod-quantity">

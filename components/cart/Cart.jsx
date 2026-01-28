@@ -1,8 +1,6 @@
 import React, { useMemo, useState } from "react";
 import "./Cart.css";
 
-import productImages from "../../src/data/productImages";
-
 import { ReactComponent as Trash } from "../../assets/icons/trash.svg";
 
 export default function Cart({ children }) {
@@ -98,10 +96,6 @@ export default function Cart({ children }) {
           {items.map((item, index) => (
             <tr key={`${item.props.sku || item.props.name}-${index}`}>
               <td className="prod-image">
-                <img
-                  src={productImages[item.props.image]?.image}
-                  alt={item.props.name}
-                />
               </td>
               <td className="prod-name strong">{item.props.name}</td>
               <td className="prod-price">
