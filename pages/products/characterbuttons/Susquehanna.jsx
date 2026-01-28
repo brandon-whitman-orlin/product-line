@@ -7,13 +7,6 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
-import s_s_b from "../../../assets/productimages/characterbuttons/s_s_b.jpg";
-import s_s_p from "../../../assets/productimages/characterbuttons/s_s_p.jpg";
-import s_m_b from "../../../assets/productimages/characterbuttons/s_m_b.jpg";
-import s_m_p from "../../../assets/productimages/characterbuttons/s_m_p.jpg";
-import s_l_b from "../../../assets/productimages/characterbuttons/s_l_b.jpg";
-import s_l_p from "../../../assets/productimages/characterbuttons/s_l_p.jpg";
-
 import Susquehanna from "../../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
 function SusquehannaButton() {

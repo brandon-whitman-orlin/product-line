@@ -11,15 +11,6 @@ import WebFooter from "../../components/webfooter/WebFooter";
 import Hambert from "../../assets/characters/Hambert_TRANSPARENT.svg";
 import Susquehanna from "../../assets/characters/Susquehanna_TRANSPARENT.svg";
 
-import b_l_b from "../../assets/productimages/characterbuttons/b_l_b.jpg";
-import b_l_p from "../../assets/productimages/characterbuttons/b_l_p.jpg";
-import c_l_b from "../../assets/productimages/characterbuttons/c_l_b.jpg";
-import c_l_p from "../../assets/productimages/characterbuttons/c_l_p.jpg";
-import s_l_b from "../../assets/productimages/characterbuttons/s_l_b.jpg";
-import s_l_p from "../../assets/productimages/characterbuttons/s_l_p.jpg";
-import h_l_b from "../../assets/productimages/characterbuttons/h_l_b.jpg";
-import h_l_p from "../../assets/productimages/characterbuttons/h_l_p.jpg";
-
 function Shop() {
   return (
     <div className="shop page">

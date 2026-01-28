@@ -7,13 +7,6 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
-import h_s_b from "../../../assets/productimages/characterbuttons/h_s_b.jpg";
-import h_s_p from "../../../assets/productimages/characterbuttons/h_s_p.jpg";
-import h_m_b from "../../../assets/productimages/characterbuttons/h_m_b.jpg";
-import h_m_p from "../../../assets/productimages/characterbuttons/h_m_p.jpg";
-import h_l_b from "../../../assets/productimages/characterbuttons/h_l_b.jpg";
-import h_l_p from "../../../assets/productimages/characterbuttons/h_l_p.jpg";
-
 import Hambert from "../../../assets/characters/Hambert_TRANSPARENT.svg";
 
 function HambertButton() {

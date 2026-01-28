@@ -1,20 +1,8 @@
 [
   {
-    "sku": "pin_basic",
-    "name": "Pin",
+    "SKU": "1",
+    "name": "Beau 1\"Pin",
     "price": 2.0,
-    "image": null
-  },
-  {
-    "sku": "sticker_pack",
-    "name": "Sticker Pack",
-    "price": 5.0,
-    "image": null
-  },
-  {
-    "sku": "bookmark_basic",
-    "name": "Bookmark",
-    "price": 3.0,
-    "image": null
+    "image": "../assets/productimages/characterbuttons/Beau_Pin.png"
   }
 ]

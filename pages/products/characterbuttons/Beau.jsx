@@ -7,13 +7,6 @@ import WebFooter from "../../../components/webfooter/WebFooter";
 import ProductDisplay from "../../../components/productdisplay/ProductDisplay";
 import Product from "../../../components/product/Product";
 
-import b_s_b from "../../../assets/productimages/characterbuttons/b_s_b.jpg";
-import b_s_p from "../../../assets/productimages/characterbuttons/b_s_p.jpg";
-import b_m_b from "../../../assets/productimages/characterbuttons/b_m_b.jpg";
-import b_m_p from "../../../assets/productimages/characterbuttons/b_m_p.jpg";
-import b_l_b from "../../../assets/productimages/characterbuttons/b_l_b.jpg";
-import b_l_p from "../../../assets/productimages/characterbuttons/b_l_p.jpg";
-
 import products from "../../../src/data/products.json";
 import { useCart } from "../../../src/context/CartContext";
 
