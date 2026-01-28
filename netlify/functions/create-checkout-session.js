@@ -1,18 +1,17 @@
 const Stripe = require("stripe");
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-// Load your catalog on the server.
-// IMPORTANT: path might vary depending on your build tooling.
-// This usually works in Netlify Functions when the file is deployed with the function bundle.
-// If it fails, I’ll show the alternative (hardcode catalog in function or move to a JS module).
-const products = require("../../src/data/products.json");
+const products = require("./_data/products.json"); 
+// ⬆️ recommended: copy products.json to netlify/functions/_data/products.json
+// so the function bundling/import path is reliable
 
 function buildCatalog(productsArr) {
   const catalog = {};
   for (const p of productsArr) {
+    if (!p.sku || !p.stripePriceId) continue;
     catalog[p.sku] = {
       name: p.name,
-      unitAmount: Math.round(Number(p.price) * 100),
+      stripePriceId: p.stripePriceId,
     };
   }
   return catalog;
@@ -41,12 +40,8 @@ exports.handler = async (event) => {
       if (!p) throw new Error(`Unknown SKU: ${sku}`);
 
       return {
+        price: p.stripePriceId, // ✅ Uses your real Stripe catalog Price
         quantity: qty,
-        price_data: {
-          currency: "usd",
-          product_data: { name: p.name },
-          unit_amount: p.unitAmount,
-        },
       };
     });
 
@@ -63,6 +58,9 @@ exports.handler = async (event) => {
 
     return { statusCode: 200, body: JSON.stringify({ url: session.url }) };
   } catch (err) {
-    return { statusCode: 500, body: JSON.stringify({ error: err.message || "Server error" }) };
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: err.message || "Server error" }),
+    };
   }
 };
