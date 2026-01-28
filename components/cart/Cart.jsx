@@ -98,7 +98,7 @@ export default function Cart({ children }) {
               <td className="prod-image">
               </td>
               <td className="prod-name strong">
-                <p>{item.props.name}</p></td>
+                </td>
               <td className="prod-price">
                 ${Number(item.props.price).toFixed(2)}
               </td>

@@ -95,7 +95,7 @@ export default function CartTable() {
               <td className="prod-image">
                 <img src={productImages[item.image]} alt={item.name} />
                 </td>
-              <td className="prod-name strong"><p>{item.name}</p></td>
+              <td className="prod-name strong"><p className="prod-name-text">{item.name}</p></td>
               <td className="prod-price">${toMoney(item.price)}</td>
               <td className="prod-quantity">
                 <input

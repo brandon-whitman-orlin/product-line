@@ -36,12 +36,18 @@
   text-align: left;
 }
 
+.prod-name-text {
+  padding-left: var(--font-size-lg);
+}
+
 .prod-price {
   text-align: center;
 }
 
 .prod-quantity {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: calc(var(--font-size-sm) / 2);
 }
 
