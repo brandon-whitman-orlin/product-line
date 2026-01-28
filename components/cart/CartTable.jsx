@@ -92,7 +92,9 @@ export default function CartTable() {
         <tbody>
           {detailedItems.map((item) => (
             <tr key={item.sku}>
-              <td className="prod-image">{productImages[item.image]}</td>
+              <td className="prod-image">
+                <img src={productImages[item.image]} alt={item.name} />
+                </td>
               <td className="prod-name strong">{item.name}</td>
               <td className="prod-price">${toMoney(item.price)}</td>
               <td className="prod-quantity">
