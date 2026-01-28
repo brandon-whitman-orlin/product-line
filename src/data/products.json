@@ -1,8 +1,8 @@
 [
   {
-    "SKU": "1",
+    "SKU": 1,
     "name": "Beau 1\"Pin",
     "price": 2.0,
-    "image": "../assets/productimages/characterbuttons/Beau_Pin.png"
+    "image": "beau_pin"
   }
 ]
