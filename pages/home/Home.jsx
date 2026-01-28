@@ -52,25 +52,25 @@ function Home() {
             </p>
             <ProductDisplay moving>
               <Product
-                product_images={[b_l_b, b_l_p]}
+                product_images={""}
                 product_description="Beau"
                 product_link="/products/character-buttons/beau"
               />
 
               <Product
-                product_images={[c_l_b, c_l_p]}
+                product_images={""}
                 product_description="Carlton"
                 product_link="/products/character-buttons/carlton"
               />
 
               <Product
-                product_images={[h_l_b, h_l_p]}
+                product_images={""}
                 product_description="Hambert"
                 product_link="/products/character-buttons/hambert"
               />
 
               <Product
-                product_images={[s_l_b, s_l_p]}
+                product_images={""}
                 product_description="Susquehanna"
                 product_link="/products/character-buttons/susquehanna"
               />

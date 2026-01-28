@@ -53,19 +53,19 @@ function BeauButton() {
           </div>
           <ProductDisplay moving>
             <Product
-              product_images={[b_s_b, b_s_p]}
+              product_images={""}
               product_description='Beau 1" pin'
               product_link=""
             />
 
             <Product
-              product_images={[b_m_b, b_m_p]}
+              product_images={""}
               product_description='Beau 1.25" pin'
               product_link=""
             />
 
             <Product
-              product_images={[b_l_b, b_l_p]}
+              product_images={""}
               product_description='Beau 2.25" pin'
               product_link=""
             />
