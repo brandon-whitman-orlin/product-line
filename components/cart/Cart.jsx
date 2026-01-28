@@ -100,7 +100,6 @@ export default function Cart({ children }) {
               <td className="prod-image">
                 <img
                   src={productImages[beau_pin]}
-                  alt={item.props.name}
                 />
               </td>
               <td className="prod-name strong">{item.props.name}</td>
