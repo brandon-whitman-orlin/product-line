@@ -98,9 +98,15 @@ export default function Cart({ children }) {
           {items.map((item, index) => (
             <tr key={`${item.props.sku || item.props.name}-${index}`}>
               <td className="prod-image">
-                <img src={productImages[item.props.name].image} alt={item.props.name}/></td>
+                <img
+                  src={productImages[item.props.image]}
+                  alt={item.props.name}
+                />
+              </td>
               <td className="prod-name strong">{item.props.name}</td>
-              <td className="prod-price">${Number(item.props.price).toFixed(2)}</td>
+              <td className="prod-price">
+                ${Number(item.props.price).toFixed(2)}
+              </td>
               <td className="prod-quantity">
                 <input
                   type="number"
