@@ -1,5 +1,4 @@
-// src/data/productImages.js
-import BeauPin from "../assets/productimages/characterbuttons/Beau_Pin.png";
+import BeauPin from "../../assets/productimages/characterbuttons/Beau_Pin.png";
 
 const productImages = {
   beau_pin: BeauPin,
