@@ -1,9 +1,11 @@
 const Stripe = require("stripe");
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-const products = require("./_data/products.json"); 
-// ⬆️ recommended: copy products.json to netlify/functions/_data/products.json
-// so the function bundling/import path is reliable
+// Load your catalog on the server.
+// IMPORTANT: path might vary depending on your build tooling.
+// This usually works in Netlify Functions when the file is deployed with the function bundle.
+// If it fails, I’ll show the alternative (hardcode catalog in function or move to a JS module).
+const products = require("../../src/data/products.json");
 
 function buildCatalog(productsArr) {
   const catalog = {};
